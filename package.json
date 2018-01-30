@@ -1,0 +1,30 @@
+{
+  "name": "xor-stream-cipher",
+  "version": "0.0.0",
+  "description": "xor stream cipher",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chiefbiiko/xor-stream-cipher.git"
+  },
+  "keywords": [
+    "xor",
+    "stream",
+    "cipher"
+  ],
+  "author": "Noah Anabiik Schwarz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chiefbiiko/xor-stream-cipher/issues"
+  },
+  "homepage": "https://github.com/chiefbiiko/xor-stream-cipher#readme",
+  "devDependencies": {
+    "tape": "^4.8.0"
+  },
+  "dependencies": {
+    "seed-bytes": "0.0.1"
+  }
+}
