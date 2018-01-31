@@ -4,11 +4,11 @@
 
 ***
 
-A simple `xor` stream cipher.
+A simple `xor` stream cipher. Uses [`seed-bytes`](https://github.com/chiefbiiko/seed-bytes) for the key stream.
 
 ***
 
-### Get it!
+## Get it!
 
 ```
 npm install --save xor-stream-cipher
@@ -16,17 +16,16 @@ npm install --save xor-stream-cipher
 
 ***
 
-### Usage
+## Usage
 
 ``` js
-var passthru = require('stream').PassThrough
 var XOR = require('xor-stream-cipher')
+var thru = require('stream').PassThrough()
 
-var plain = Buffer.from('the money is in the attic')
-var shared = Buffer.from([ 4, 1, 9 ])
+var plain = 'the money is in the attic'
+var shared = '419'
 var a = XOR(shared)
 var b = XOR(shared)
-var thru = passthru()
 
 function ondata (name, chunk) {
   console.log(name + ':', chunk.toString())

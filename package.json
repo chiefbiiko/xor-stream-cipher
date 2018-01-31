@@ -1,6 +1,6 @@
 {
   "name": "xor-stream-cipher",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "xor stream cipher",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,8 @@
   "keywords": [
     "xor",
     "stream",
-    "cipher"
+    "cipher",
+    "keystream"
   ],
   "author": "Noah Anabiik Schwarz",
   "license": "MIT",

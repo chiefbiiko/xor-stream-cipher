@@ -1,11 +1,10 @@
-var passthru = require('stream').PassThrough
 var XOR = require('./index')
+var thru = require('stream').PassThrough()
 
-var plain = Buffer.from('the money is in the attic')
-var shared = Buffer.from([ 4, 1, 9 ])
+var plain = 'the money is in the attic'
+var shared = '419'
 var a = XOR(shared)
 var b = XOR(shared)
-var thru = passthru()
 
 function ondata (name, chunk) {
   console.log(name + ':', chunk.toString())
