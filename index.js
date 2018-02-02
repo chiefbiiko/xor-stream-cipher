@@ -6,6 +6,7 @@ function XOR (init, algo) {
   if (!(this instanceof XOR)) return new XOR(init, algo)
   Transform.call(this)
   this._next = seed(init, algo)
+  this._next(4096) // drop4096
 }
 
 inherits(XOR, Transform)

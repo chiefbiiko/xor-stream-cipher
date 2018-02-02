@@ -1,6 +1,6 @@
 {
   "name": "xor-stream-cipher",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "xor stream cipher",
   "main": "index.js",
   "scripts": {
